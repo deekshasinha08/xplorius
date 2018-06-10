@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.banner {
+    /* The image used */
+    background-image: url('../Assets/pizza3.jpg');
+
+    /* Full height */
+    height: 350px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#app {
+    height: 100%;
+}
+
+.siteInfo {
+    background-color: white;
+    margin: auto !important;
+    margin-left: 15px !important;
+    text-align: center;
+}
+.avatar {
+    float: right;
+    margin: 10px;
+}
+.searchBar {
+    padding-top: 100px;
+    padding-left: 380px;
+}
+.md-divider--text-field::after {
+    background: #f50057 !important;
+}
+.searchBar .md-icon-text {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+.searchBar .md-text-field {
+    font-weight: bold;
+    font-size: 15px;
+}
+#placeholder-only-title {
+    color: white;
+}
+.logo {
+    width: 180px;
+    height: 90px;
+    margin-left: 320px;
+}
