@@ -52,3 +52,19 @@ body, html {
     height: 90px;
     margin-left: 320px;
 }
+.icon {
+    height: 100px;
+    width: 100px;
+}
+.button {
+    margin: 10px;
+}
+.container {
+
+    margin:0 auto;
+}
+
+.innerDiv {
+   float: left;
+   margin: 15px;
+}

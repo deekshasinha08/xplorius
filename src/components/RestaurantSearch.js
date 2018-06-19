@@ -5,12 +5,16 @@ import { withRouter }  from 'react-router-dom';
 import { Button, SelectField, SVGIcon, TextField } from 'react-md';
 import arrowDropDown from '../Assets/drop-down-arrow.svg';
 
+
 const icon = <SVGIcon use={arrowDropDown} />;
 const STRING_ITEMS = ['Sendlinger Tor', 'Marienplatz'];
 
 class RestaurantSearch extends React.Component {
     constructor(props) {
         super(props);
+    }
+    nextPath(path) {
+        this.props.history.push(path);
     }
 
     render() {
@@ -25,7 +29,7 @@ class RestaurantSearch extends React.Component {
                     dropdownIcon={icon}
                 />
                 <TextField id="placeholder-only-title" placeholder="Enter Restaurant Name" className="md-cell md-cell--bottom" />
-                <Button raised  className="md-btn--toolbar md-background--secondary" iconClassName="fa fa-search">Search</Button>
+                <Button raised  className="md-btn--toolbar md-background--secondary" iconClassName="fa fa-search" onClick={ () => this.nextPath('/search')}>Search</Button>
             </div>
         );
     }

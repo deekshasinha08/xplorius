@@ -7,6 +7,7 @@ import WebsiteInfo from '../components/WebsiteInfo';
 export class LandingPageView extends React.Component{
     constructor(props) {
         super(props);
+        console.log(props);
     }
 
     render() {
