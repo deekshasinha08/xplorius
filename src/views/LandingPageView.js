@@ -1,6 +1,7 @@
 "use strict";
 
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import Header from '../components/Header';
 import WebsiteInfo from '../components/WebsiteInfo';
 
@@ -19,3 +20,5 @@ export class LandingPageView extends React.Component{
         );
     }
 }
+export default withRouter(LandingPageView);
+

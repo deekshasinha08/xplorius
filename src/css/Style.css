@@ -1,3 +1,4 @@
+
 body, html {
     height: 100%;
     margin: 0;
@@ -59,12 +60,41 @@ body, html {
 .button {
     margin: 10px;
 }
-.container {
-
+.divCenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+/*.container {
     margin:0 auto;
+}*/
+.container {
+    text-align: center;
+    margin: 20px;
+}
+.cardDiv {
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .innerDiv {
-   float: left;
-   margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+
+}
+.xploriusTitle {
+    float: left;
+    margin: 10px 30px 30px 30px ;
+    font-weight: bold;
+    color: #f50057;
+}
+.restaurantCard {
+    width: 1000px;
+}
+
+.md-tab-label {
+    font-weight: bold !important;
+}
+.md-tab--inactive {
+    color: gray !important;
 }

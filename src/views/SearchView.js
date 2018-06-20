@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom';
 import { Card, CardTitle } from 'react-md';
 import { RestaurantCards } from '../components/RestaurantCards';
 import  { SponsoredCard } from '../components/SponsoredCard';
+import  { SearchHeader } from '../components/SearchHeader';
 import {Filter} from "../components/Filter";
 
 
@@ -88,7 +89,7 @@ export class SearchView extends React.Component {
                 buffet: "true"
             }
         ]
-        var restaurants=[]; var sponsoredRestaurants = []
+        var restaurants=[]; var sponsoredRestaurants = [];
         for(var i=0;i<RESTAURANTS.length;i++){
             // push the component to elements
             restaurants.push(<RestaurantCards key={RESTAURANTS[i].id} data={ RESTAURANTS[i]} history={this.props.history } />);
@@ -98,19 +99,22 @@ export class SearchView extends React.Component {
             sponsoredRestaurants.push(<SponsoredCard key={sponsored[i].id} data={ sponsored[i]} history={this.props.history } />);
         }
         return (
-
-            <div className="container">
-                <h2>Search Results for: </h2>
-                <div className="innerDiv">
-                    <Filter></Filter>
-                </div>
-                <div className="innerDiv">
-                    {restaurants}
-                </div>
-                <div className="innerDiv">
-                    {sponsoredRestaurants}
+            <div>
+                <SearchHeader />
+                <div className="container">
+                    <h2>Search Results for: </h2>
+                    <div className="innerDiv">
+                        <Filter></Filter>
+                    </div>
+                    <div className="innerDiv">
+                        {restaurants}
+                    </div>
+                    <div className="innerDiv">
+                        {sponsoredRestaurants}
+                    </div>
                 </div>
             </div>
+
         );
     }
 

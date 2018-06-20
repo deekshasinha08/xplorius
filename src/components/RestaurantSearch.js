@@ -9,7 +9,7 @@ import arrowDropDown from '../Assets/drop-down-arrow.svg';
 const icon = <SVGIcon use={arrowDropDown} />;
 const STRING_ITEMS = ['Sendlinger Tor', 'Marienplatz'];
 
-class RestaurantSearch extends React.Component {
+export class RestaurantSearch extends React.Component {
     constructor(props) {
         super(props);
     }

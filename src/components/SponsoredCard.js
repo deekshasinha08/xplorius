@@ -11,14 +11,14 @@ export class SponsoredCard extends React.Component {
     render() {
         const data = this.props.data;
         return(
-            <Card key={data.id}>
-                <CardTitle title={data.name} subtitle={ data.address } avatar={<img src={'https://i0.wp.com/brunchy.ae/wp-content/uploads/2017/09/kanpai_lounge__restaurant.jpg'} className="icon"/>}></CardTitle>
-                <Divider />
-                <CardActions>
-                    <Button raised className="button">Order</Button>
-                    <Button raised className="button">Reserve</Button>
-                </CardActions>
-            </Card>
+                <Card key={data.id} className="cardDiv">
+                    <CardTitle title={data.name} subtitle={ data.address } avatar={<img src={'https://i0.wp.com/brunchy.ae/wp-content/uploads/2017/09/kanpai_lounge__restaurant.jpg'} className="icon"/>}></CardTitle>
+                    <Divider />
+                    <CardActions>
+                        <Button raised className="button">Order</Button>
+                        <Button raised className="button">Reserve</Button>
+                    </CardActions>
+                </Card>
         );
     }
 }
